@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rate-001",
+    "mcoId": "mco-001",
+    "measureId": "meas-diabetes-control",
+    "measureName": "Diabetes HbA1c Control",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.82,
+    "actualRate": 0.85,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.79, "targetRate": 0.80 },
+      { "cycle": "2025-Q4", "actualRate": 0.81, "targetRate": 0.81 },
+      { "cycle": "2026-Q1", "actualRate": 0.83, "targetRate": 0.82 },
+      { "cycle": "2026-Q2", "actualRate": 0.85, "targetRate": 0.82 }
+    ]
+  },
+  {
+    "id": "rate-002",
+    "mcoId": "mco-002",
+    "measureId": "meas-diabetes-control",
+    "measureName": "Diabetes HbA1c Control",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.82,
+    "actualRate": 0.74,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.78, "targetRate": 0.80 },
+      { "cycle": "2025-Q4", "actualRate": 0.76, "targetRate": 0.81 },
+      { "cycle": "2026-Q1", "actualRate": 0.75, "targetRate": 0.82 },
+      { "cycle": "2026-Q2", "actualRate": 0.74, "targetRate": 0.82 }
+    ]
+  },
+  {
+    "id": "rate-003",
+    "mcoId": "mco-003",
+    "measureId": "meas-well-child",
+    "measureName": "Well-Child Visits (0-15 months)",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.90,
+    "actualRate": 0.91,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.88, "targetRate": 0.89 },
+      { "cycle": "2025-Q4", "actualRate": 0.89, "targetRate": 0.89 },
+      { "cycle": "2026-Q1", "actualRate": 0.90, "targetRate": 0.90 },
+      { "cycle": "2026-Q2", "actualRate": 0.91, "targetRate": 0.90 }
+    ]
+  },
+  {
+    "id": "rate-004",
+    "mcoId": "mco-004",
+    "measureId": "meas-well-child",
+    "measureName": "Well-Child Visits (0-15 months)",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.90,
+    "actualRate": 0.77,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.83, "targetRate": 0.89 },
+      { "cycle": "2025-Q4", "actualRate": 0.81, "targetRate": 0.89 },
+      { "cycle": "2026-Q1", "actualRate": 0.79, "targetRate": 0.90 },
+      { "cycle": "2026-Q2", "actualRate": 0.77, "targetRate": 0.90 }
+    ]
+  },
+  {
+    "id": "rate-005",
+    "mcoId": "mco-005",
+    "measureId": "meas-behavioral-followup",
+    "measureName": "Behavioral Health Follow-Up (7-day)",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.65,
+    "actualRate": 0.60,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.58, "targetRate": 0.63 },
+      { "cycle": "2025-Q4", "actualRate": 0.59, "targetRate": 0.64 },
+      { "cycle": "2026-Q1", "actualRate": 0.60, "targetRate": 0.65 },
+      { "cycle": "2026-Q2", "actualRate": 0.60, "targetRate": 0.65 }
+    ]
+  },
+  {
+    "id": "rate-006",
+    "mcoId": "mco-006",
+    "measureId": "meas-behavioral-followup",
+    "measureName": "Behavioral Health Follow-Up (7-day)",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.65,
+    "actualRate": 0.68,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.61, "targetRate": 0.63 },
+      { "cycle": "2025-Q4", "actualRate": 0.64, "targetRate": 0.64 },
+      { "cycle": "2026-Q1", "actualRate": 0.66, "targetRate": 0.65 },
+      { "cycle": "2026-Q2", "actualRate": 0.68, "targetRate": 0.65 }
+    ]
+  },
+  {
+    "id": "rate-007",
+    "mcoId": "mco-007",
+    "measureId": "meas-diabetes-control",
+    "measureName": "Diabetes HbA1c Control",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.82,
+    "actualRate": 0.83,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.80, "targetRate": 0.80 },
+      { "cycle": "2025-Q4", "actualRate": 0.81, "targetRate": 0.81 },
+      { "cycle": "2026-Q1", "actualRate": 0.82, "targetRate": 0.82 },
+      { "cycle": "2026-Q2", "actualRate": 0.83, "targetRate": 0.82 }
+    ]
+  },
+  {
+    "id": "rate-008",
+    "mcoId": "mco-008",
+    "measureId": "meas-well-child",
+    "measureName": "Well-Child Visits (0-15 months)",
+    "rateSettingCycle": "2026-Q2",
+    "targetRate": 0.90,
+    "actualRate": 0.85,
+    "history": [
+      { "cycle": "2025-Q3", "actualRate": 0.86, "targetRate": 0.89 },
+      { "cycle": "2025-Q4", "actualRate": 0.85, "targetRate": 0.89 },
+      { "cycle": "2026-Q1", "actualRate": 0.86, "targetRate": 0.90 },
+      { "cycle": "2026-Q2", "actualRate": 0.85, "targetRate": 0.90 }
+    ]
+  }
+]

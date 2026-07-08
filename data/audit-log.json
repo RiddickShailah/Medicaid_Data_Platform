@@ -1,0 +1,10 @@
+[
+  { "id": "audit-0001", "actorId": "user-regulator-01", "actorRole": "regulator", "action": "view", "resourceType": "vbp_rate", "resourceId": "rate-004", "timestamp": "2026-07-07T14:22:10Z", "ipHash": "a1f9c2e0" },
+  { "id": "audit-0002", "actorId": "user-mco004-admin", "actorRole": "mco_admin", "action": "edit", "resourceType": "compliance_metric", "resourceId": "comp-002", "timestamp": "2026-07-07T13:58:44Z", "ipHash": "8b3d7f11" },
+  { "id": "audit-0003", "actorId": "user-auditor-02", "actorRole": "auditor", "action": "export", "resourceType": "audit_log", "resourceId": "bulk-2026-Q2", "timestamp": "2026-07-07T11:05:02Z", "ipHash": "c47e91aa" },
+  { "id": "audit-0004", "actorId": "user-regulator-01", "actorRole": "regulator", "action": "flag_resolve", "resourceType": "compliance_metric", "resourceId": "comp-006", "timestamp": "2026-07-06T16:40:33Z", "ipHash": "a1f9c2e0" },
+  { "id": "audit-0005", "actorId": "user-mco002-analyst", "actorRole": "mco_analyst", "action": "view", "resourceType": "vbp_rate", "resourceId": "rate-002", "timestamp": "2026-07-06T09:12:57Z", "ipHash": "3e6a0dcf" },
+  { "id": "audit-0006", "actorId": "user-mco008-admin", "actorRole": "mco_admin", "action": "view", "resourceType": "compliance_metric", "resourceId": "comp-005", "timestamp": "2026-07-05T15:30:18Z", "ipHash": "f0912bce" },
+  { "id": "audit-0007", "actorId": "user-regulator-01", "actorRole": "regulator", "action": "export", "resourceType": "mco", "resourceId": "mco-004", "timestamp": "2026-07-05T10:02:41Z", "ipHash": "a1f9c2e0" },
+  { "id": "audit-0008", "actorId": "user-auditor-02", "actorRole": "auditor", "action": "view", "resourceType": "audit_log", "resourceId": "range-2026-06", "timestamp": "2026-07-04T08:47:09Z", "ipHash": "c47e91aa" }
+]

@@ -1,0 +1,10 @@
+[
+  { "id": "comp-001", "mcoId": "mco-002", "type": "submission_timeliness", "status": "at_risk", "description": "Q2 encounter data submitted 6 days past deadline", "dueDate": "2026-06-15", "resolvedDate": null },
+  { "id": "comp-002", "mcoId": "mco-004", "type": "measure_threshold", "status": "non_compliant", "description": "Well-Child Visits rate 13 points below target for two consecutive cycles", "dueDate": "2026-07-01", "resolvedDate": null },
+  { "id": "comp-003", "mcoId": "mco-004", "type": "data_completeness", "status": "non_compliant", "description": "Provider roster missing NPI for 4.2% of claims", "dueDate": "2026-06-30", "resolvedDate": null },
+  { "id": "comp-004", "mcoId": "mco-005", "type": "submission_timeliness", "status": "at_risk", "description": "Quality measure file late in 2 of last 4 cycles", "dueDate": "2026-07-10", "resolvedDate": null },
+  { "id": "comp-005", "mcoId": "mco-008", "type": "measure_threshold", "status": "at_risk", "description": "Well-Child Visits rate trending down for three cycles", "dueDate": "2026-07-15", "resolvedDate": null },
+  { "id": "comp-006", "mcoId": "mco-001", "type": "data_completeness", "status": "compliant", "description": "Q1 claims file resubmitted with corrected diagnosis codes", "dueDate": "2026-04-15", "resolvedDate": "2026-04-12" },
+  { "id": "comp-007", "mcoId": "mco-003", "type": "submission_timeliness", "status": "compliant", "description": "Q1 encounter data — no issues", "dueDate": "2026-04-15", "resolvedDate": "2026-04-10" },
+  { "id": "comp-008", "mcoId": "mco-006", "type": "measure_threshold", "status": "compliant", "description": "Behavioral Health Follow-Up rate exceeded target", "dueDate": "2026-04-30", "resolvedDate": "2026-04-30" }
+]
