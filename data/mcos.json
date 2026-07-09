@@ -1,0 +1,10 @@
+[
+  { "id": "mco-001", "name": "Highland Community Health Plan", "region": "Northeast", "memberCount": 412500, "enrollmentStatus": "active", "complianceStatus": "compliant" },
+  { "id": "mco-002", "name": "Riverstone Care Partners", "region": "Midwest", "memberCount": 287300, "enrollmentStatus": "active", "complianceStatus": "at_risk" },
+  { "id": "mco-003", "name": "Summit Valley Medicaid Alliance", "region": "West", "memberCount": 198750, "enrollmentStatus": "active", "complianceStatus": "compliant" },
+  { "id": "mco-004", "name": "Coastal Bridge Health Network", "region": "South", "memberCount": 356900, "enrollmentStatus": "active", "complianceStatus": "non_compliant" },
+  { "id": "mco-005", "name": "Prairie Wellness Cooperative", "region": "Midwest", "memberCount": 142100, "enrollmentStatus": "provisional", "complianceStatus": "at_risk" },
+  { "id": "mco-006", "name": "Cascade Regional Care", "region": "West", "memberCount": 267400, "enrollmentStatus": "active", "complianceStatus": "compliant" },
+  { "id": "mco-007", "name": "Piedmont Family Health Plan", "region": "South", "memberCount": 231800, "enrollmentStatus": "active", "complianceStatus": "compliant" },
+  { "id": "mco-008", "name": "Great Lakes Integrated Health", "region": "Midwest", "memberCount": 319200, "enrollmentStatus": "active", "complianceStatus": "at_risk" }
+]
