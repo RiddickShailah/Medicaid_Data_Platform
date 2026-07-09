@@ -46,17 +46,36 @@ This repo is a **frontend/product scaffold** meant to be finished inside Cursor.
 - **State/data:** Local mock JSON in `/data` served through `lib/mock-data.ts` — swap for real API calls later (see `ARCHITECTURE.md`)
 - **Icons:** lucide-react
 
-## 4. Getting started
+## 4. Run locally (see the UI)
 
 ```bash
+cd ~/Desktop/Projects/Medicaid_Data_Platform
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. The app shell, navigation, and mock-data-driven pages already
-render — use `CURSOR_PROMPTS.md` to have Cursor flesh out each screen's visuals.
+Open **http://localhost:3000** in your browser.
 
-## 5. Project structure
+Use the sidebar to navigate: Overview, MCO Performance, VBP Rates,
+Compliance & Audit, and Data Pipeline.
+
+## 5. Deploy
+
+This is a static Next.js app — deploy free on [Vercel](https://vercel.com):
+
+1. Push this repo to GitHub (already done).
+2. Go to [vercel.com/new](https://vercel.com/new) and import **RiddickShailah/Medicaid_Data_Platform**.
+3. Leave all settings as default (Framework: Next.js) and click **Deploy**.
+4. Vercel gives you a live URL like `https://medicaid-data-platform.vercel.app`.
+
+Or deploy from the terminal with the Vercel CLI:
+
+```bash
+cd ~/Desktop/Projects/Medicaid_Data_Platform
+npx vercel
+```
+
+## 6. Project structure
 
 ```
 app/
@@ -75,7 +94,7 @@ data/
   mcos.json, vbp-rates.json, compliance-metrics.json, audit-log.json
 ```
 
-## 6. Design system
+## 7. Design system
 
 Read this before generating UI. The goal is a **civic-ledger** aesthetic — the visual language
 of a state regulatory filing crossed with a modern data platform. Precise, trustworthy, legible
