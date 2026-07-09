@@ -6,13 +6,15 @@ organizations, exposes an interactive regulatory dashboard to state regulators a
 stakeholders, and enforces a compliance-grade security posture (TLS + AES-256, RBAC, audit
 logging) suitable for federally regulated health data.
 
-This repo is a **frontend/product scaffold** meant to be finished inside Cursor. It ships with:
+This repo is a **regulatory dashboard demo** with interactive charts, RBAC role switching, and security UI indicators. It ships with:
 
-- A working Next.js + TypeScript + Tailwind app shell (sidebar, header, routing)
-- Realistic **mock data** for MCOs, VBP rates, compliance metrics, and audit logs
-- Strongly-typed data models (`lib/types.ts`) so Cursor's autocomplete/agent has real shapes to work with
-- A written **design system** (below) so generated UI looks intentional, not templated
-- `CURSOR_PROMPTS.md` — copy/paste prompts to drive Cursor through building out each screen
+- **Recharts** — MCO attainment bars, compliance summary, expandable rate trend lines
+- **Role switcher** in header (Regulator / MCO Admin / Analyst / Auditor) with scoped nav + data
+- **Security banner** — TLS 1.3, AES-256, immutable audit logging indicators
+- **Animated Data Lineage Thread** on overview and pipeline pages
+- **VBP workbench** with measure/cycle selectors and historical trend charts
+- **Compliance page** with export confirmation modal and full audit log table
+- Realistic mock data for 8 MCOs, VBP rates, compliance metrics, and audit entries
 
 > This is a portfolio/demo project. The "security framework" described here is a **design
 > spec** to be implemented — mock auth and mock encryption indicators are used in the UI so the
@@ -56,8 +58,13 @@ npm run dev
 
 Open **http://localhost:3000** in your browser.
 
-Use the sidebar to navigate: Overview, MCO Performance, VBP Rates,
-Compliance & Audit, and Data Pipeline.
+**What to try:**
+- Switch roles in the **header dropdown** to see RBAC-scoped navigation
+- **Overview** — attainment + compliance charts, animated lineage thread
+- **MCO Performance** — click a row to expand rate trend charts
+- **VBP Rates** — change measure/cycle selectors, view trend chart
+- **Compliance** — filter metrics, try **Export audit report** (confirmation modal)
+- **Data Pipeline** — full pipeline stage breakdown
 
 ## 5. Deploy
 
@@ -86,12 +93,12 @@ app/
   compliance/               Compliance metrics + audit log
   data-pipeline/            Data linking pipeline visualization (signature screen)
 components/
-  Sidebar.tsx, Header.tsx, KpiCard.tsx   Shared shell + primitives
+  Sidebar.tsx, Header.tsx, KpiCard.tsx, StatusChip.tsx
+  SecurityBanner.tsx, DataLineageThread.tsx
+  charts/RateTrendChart.tsx, ComplianceChart.tsx, McoAttainmentChart.tsx
 lib/
-  types.ts                Domain types: MCO, VbpRate, ComplianceMetric, AuditLogEntry, Role
-  mock-data.ts             Typed accessors over /data JSON
-data/
-  mcos.json, vbp-rates.json, compliance-metrics.json, audit-log.json
+  role-context.tsx         RBAC role switcher (client context)
+  types.ts, mock-data.ts
 ```
 
 ## 7. Design system
