@@ -8,6 +8,7 @@ import type {
   ComplianceMetric,
   AuditLogEntry,
   PipelineStage,
+  Role,
 } from "@/lib/types";
 
 // Cast the raw JSON to our domain types. In a real app this module would be
@@ -105,4 +106,44 @@ export function getPipelineStages(): PipelineStage[] {
       errorCount: 0,
     },
   ];
+}
+
+export function getMcoAttainmentChartData(): { name: string; attainment: number; region: string }[] {
+  const mcos = getMcos();
+  return mcos.map((m) => {
+    const rates = getVbpRatesForMco(m.id);
+    const avg =
+      rates.length === 0
+        ? 0
+        : (rates.reduce((s, r) => s + r.actualRate / r.targetRate, 0) / rates.length) * 100;
+    return {
+      name: m.name.split(" ")[0],
+      attainment: Math.round(avg),
+      region: m.region,
+    };
+  });
+}
+
+export function getComplianceChartData() {
+  const metrics = getComplianceMetrics();
+  const open = getOpenComplianceMetrics().length;
+  const resolved = metrics.length - open;
+  const byStatus = {
+    compliant: getMcos().filter((m) => m.complianceStatus === "compliant").length,
+    at_risk: getMcos().filter((m) => m.complianceStatus === "at_risk").length,
+    non_compliant: getMcos().filter((m) => m.complianceStatus === "non_compliant").length,
+  };
+  return [
+    { name: "Compliant MCOs", value: byStatus.compliant, status: "compliant" },
+    { name: "At risk", value: byStatus.at_risk, status: "at_risk" },
+    { name: "Non-compliant", value: byStatus.non_compliant, status: "non_compliant" },
+    { name: "Open flags", value: open, status: "open" },
+    { name: "Resolved", value: resolved, status: "resolved" },
+  ];
+}
+
+export function filterMcosForRole(mcos: Mco[], role: Role, mcoId: string | null): Mco[] {
+  if (role === "regulator" || role === "auditor") return mcos;
+  if (mcoId) return mcos.filter((m) => m.id === mcoId);
+  return mcos;
 }

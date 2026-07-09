@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, IBM_Plex_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
+import { RoleProvider } from "@/lib/role-context";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -42,15 +43,15 @@ export default function RootLayout({
       className={`${newsreader.variable} ${ibmSans.variable} ${ibmMono.variable}`}
     >
       <body className="font-body">
-        <div className="flex min-h-screen">
-          <Sidebar />
-          <div className="flex-1 flex flex-col min-w-0">
-            <Header />
-            <main className="flex-1 px-6 py-6 md:px-10 md:py-8">
-              {children}
-            </main>
+        <RoleProvider>
+          <div className="flex min-h-screen">
+            <Sidebar />
+            <div className="flex-1 flex flex-col min-w-0">
+              <Header />
+              <main className="flex-1 px-6 py-6 md:px-10 md:py-8">{children}</main>
+            </div>
           </div>
-        </div>
+        </RoleProvider>
       </body>
     </html>
   );
